@@ -10,12 +10,12 @@ My goal is to pursue a career in healthcare analytics in hopes of enhancing heal
 Design a relational database for a Healthcare Mangement System that allows healthcare companies to efficiently store and manage data related to patients, doctors, appointments, billing, and inventory
 
 <h4>Deliverables</h4>
-<ol></ol>
+<ol>
 <li>Entities and Attributes</li>
 <li>Entity Relationship (ER) Diagram</li>
 <li>Database Model</li>
 <li>SQL Server Database Schema</li>
-
+</ol>
 
 
 <br></br>
