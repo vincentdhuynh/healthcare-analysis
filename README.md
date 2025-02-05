@@ -16,6 +16,7 @@ Design a relational database for a Healthcare Mangement System that allows healt
 <li>Database Model</li>
 
   <li>Database Schema using SQL Server</li>
+<pre>
   -- Create Patient table
 CREATE TABLE Patient (
 	patient_id int PRIMARY KEY,
@@ -63,6 +64,7 @@ CREATE TABLE Doctor (
 	specialization VARCHAR(255) NOT NULL,
 	schedule TEXT
 );
+</pre>
 </ol>
 
 <h4>Database Schema using SQL Server</h4>
