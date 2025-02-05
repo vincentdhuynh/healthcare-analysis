@@ -15,7 +15,7 @@ Design a relational database for a Healthcare Mangement System that allows healt
 	<pre>				<
 		<h5>Patient entity stores personal details regarding the patient</h5>
 		<ul>
-			<li>patient_id: Unique identifier for patients (Primary Key) </li>l>
+			<li>patient_id: Unique identifier for patients (Primary Key) </li>
 			<li>first_name: First name of the patient</li>
 			<li>last_name: Last name of patient</li>
 			<li>dob: Date of birth of patient</li>
