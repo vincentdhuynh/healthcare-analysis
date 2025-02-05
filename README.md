@@ -11,7 +11,12 @@ Design a relational database for a Healthcare Mangement System that allows healt
 
 <h4>Deliverables</h4>
 <ol>
-<li>Entities and Attributes</li>
+	<li>Entities and Attributes</li>
+	<li>Entity Relationship Diagram</li>
+	<li>Database Model</li>
+	<li>Database Schema using SQL Server</li>
+</ol>
+<h5>Entities and Attributes</h5>
 	<pre>				<
 		Patient entity stores personal details regarding the patient
 		<ul>
@@ -33,10 +38,11 @@ Design a relational database for a Healthcare Mangement System that allows healt
 			<li>status: status of the appointment</li>
 		</ul>
 	</pre>
-<li>Entity Relationship (ER) Diagram</li>
-<li>Database Model</li>
-
-  <li>Database Schema using SQL Server</li>
+<h5>2. Entity Relationship Diagram</h5>
+		
+<h5>3. Database Model</h5>
+		
+<h5>4. Database Schema using SQL Server</h5>
 	<pre>
 		-- Create Patient table
 		CREATE TABLE Patient (
