@@ -50,6 +50,7 @@ CREATE TABLE Billing (
 	FOREIGN KEY (patient_id) REFERENCES Patient(patient_id)
 );
 
+--CREATE Inventory table
 CREATE TABLE Inventory (
 	inventory_id INT NOT NULL,
 	item_name VARCHAR(255) NOT NULL,
@@ -57,12 +58,14 @@ CREATE TABLE Inventory (
 	expiration_date DATE
 );
 
+-- Create Doctor table
 CREATE TABLE Doctor (
 	doctor_id INT PRIMARY KEY,
 	first_name VARCHAR(255) NOT NULL,
 	last_name VARCHAR(255) NOT NULL,
 	specialization VARCHAR(255) NOT NULL,
 	schedule TEXT
+);
 );
 </pre>
 </ol>
