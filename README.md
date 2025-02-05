@@ -12,57 +12,78 @@ Design a relational database for a Healthcare Mangement System that allows healt
 <h4>Deliverables</h4>
 <ol>
 <li>Entities and Attributes</li>
+	<pre>				<
+		<h5>Patient entity stores personal details regarding the patient</h5>
+		<ul>
+			<li>patient_id: Unique identifier for patients (Primary Key) 
+			<li>first_name<: First name of patient/li>
+			<li>last_name: Last name of patient</li>
+			<li>dob: Date of birth of patient</li>
+			<li>gender: Gender of patient</li>
+			<li>address: Address of patient</li>
+			<l>phone: Phone number of patient</li>
+			<l>insurance_info: Insurance innformation of patient</l>
+		</ul>
+		<h5>Appointment entity stores information on appointments scheduled for patients</h5>
+		<ul>
+			<li>appointment_id: Unique identiffier for appointsments (Primary Key) </li>
+			<li>patient_id: Identifier of the patient for the appointment (Foreign Key referencing Patient table)  </li>
+			<li>doctor_id: Identifier of  the doctor for the appointment (Foreign Key referencing Patient table) </li>
+			<li>appointment_date: Date and time of the appointment </li>
+			<li>status: status of the appointment</li>
+		</ul>
+	</pre>
 <li>Entity Relationship (ER) Diagram</li>
 <li>Database Model</li>
 
   <li>Database Schema using SQL Server</li>
-<pre>
--- Create Patient table
-CREATE TABLE Patient (
-	patient_id int PRIMARY KEY,
-	first_name VARCHAR(255) NOT NULL,
-	last_name VARCHAR(255) NOT NULL,
-	dob DATE NOT NULL,
-	gender VARCHAR(10) NOT NULL,
-	address TEXT,
-	phone VARCHAR(20),
-	insurance_info TEXT
-);
-	-- Create Appointment table
-CREATE TABLE Appointment (
-	appointment_id INT PRIMARY KEY,
-	patient_id INT NOT NULL,
-	doctor_id INT NOT NULL,
-	appointment_date DATETIME NOT NULL,
-	status VARCHAR(50) NOT NULL,
-	FOREIGN KEY (patient_id) REFERENCES Patient(patient_id),
-    FOREIGN KEY (doctor_id) REFERENCES Doctor(doctor_id)
-);
---CREATE Billing table
-CREATE TABLE Billing (
-	billing_id INT PRIMARY KEY,
-	patient_id INT NOT NULL,
-	amount DECIMAL(10, 2) NOT NULL,
-	billing_date DATE NOT NULL,
-	payment_status VARCHAR(50) NOT NULL
-	FOREIGN KEY (patient_id) REFERENCES Patient(patient_id)
-);
---CREATE Inventory table
-CREATE TABLE Inventory (
-	inventory_id INT NOT NULL,
-	item_name VARCHAR(255) NOT NULL,
-	quantity INT NOT NULL,
-	expiration_date DATE
-);
--- Create Doctor table
-CREATE TABLE Doctor (
-	doctor_id INT PRIMARY KEY,
-	first_name VARCHAR(255) NOT NULL,
-	last_name VARCHAR(255) NOT NULL,
-	specialization VARCHAR(255) NOT NULL,
-	schedule TEXT
-);
-</pre>
+	<pre>
+		-- Create Patient table
+		CREATE TABLE Patient (
+			patient_id int PRIMARY KEY,
+			first_name VARCHAR(255) NOT NULL,
+			last_name VARCHAR(255) NOT NULL,
+			dob DATE NOT NULL,
+			gender VARCHAR(10) NOT NULL,
+			address TEXT,
+			phone VARCHAR(20),
+			insurance_info TEXT
+		);
+		-- Create Appointment table
+		CREATE TABLE Appointment (
+			appointment_id INT PRIMARY KEY,
+			patient_id INT NOT NULL,
+			doctor_id INT NOT NULL,
+			appointment_date DATETIME NOT NULL,
+			status VARCHAR(50) NOT NULL,
+			FOREIGN KEY (patient_id) REFERENCES Patient(patient_id),
+		    	FOREIGN KEY (doctor_id) REFERENCES Doctor(doctor_id)
+		);
+		--CREATE Billing table
+		CREATE TABLE Billing (
+			billing_id INT PRIMARY KEY,
+			patient_id INT NOT NULL,
+			amount DECIMAL(10, 2) NOT NULL,
+			billing_date DATE NOT NULL,
+			payment_status VARCHAR(50) NOT NULL
+			FOREIGN KEY (patient_id) REFERENCES Patient(patient_id)
+		);
+		--CREATE Inventory table
+		CREATE TABLE Inventory (
+			inventory_id INT NOT NULL,
+			item_name VARCHAR(255) NOT NULL,
+			quantity INT NOT NULL,
+			expiration_date DATE
+		);
+		-- Create Doctor table
+		CREATE TABLE Doctor (
+			doctor_id INT PRIMARY KEY,
+			first_name VARCHAR(255) NOT NULL,
+			last_name VARCHAR(255) NOT NULL,
+			specialization VARCHAR(255) NOT NULL,
+			schedule TEXT
+		);
+	</pre>
 </ol>
 
 <h4>Database Schema using SQL Server</h4>
