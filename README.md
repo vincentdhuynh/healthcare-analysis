@@ -28,7 +28,6 @@ CREATE TABLE Patient (
 	phone VARCHAR(20),
 	insurance_info TEXT
 );
-
 -- Create Appointment table
 CREATE TABLE Appointment (
 	appointment_id INT PRIMARY KEY,
@@ -39,7 +38,6 @@ CREATE TABLE Appointment (
 	FOREIGN KEY (patient_id) REFERENCES Patient(patient_id),
     FOREIGN KEY (doctor_id) REFERENCES Doctor(doctor_id)
 );
-
 --CREATE Billing table
 CREATE TABLE Billing (
 	billing_id INT PRIMARY KEY,
@@ -49,7 +47,6 @@ CREATE TABLE Billing (
 	payment_status VARCHAR(50) NOT NULL
 	FOREIGN KEY (patient_id) REFERENCES Patient(patient_id)
 );
-
 --CREATE Inventory table
 CREATE TABLE Inventory (
 	inventory_id INT NOT NULL,
@@ -57,7 +54,6 @@ CREATE TABLE Inventory (
 	quantity INT NOT NULL,
 	expiration_date DATE
 );
-
 -- Create Doctor table
 CREATE TABLE Doctor (
 	doctor_id INT PRIMARY KEY,
@@ -66,7 +62,6 @@ CREATE TABLE Doctor (
 	specialization VARCHAR(255) NOT NULL,
 	schedule TEXT
 );
-
 </pre>
 </ol>
 
