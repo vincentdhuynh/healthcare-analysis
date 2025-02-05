@@ -17,7 +17,7 @@ Design a relational database for a Healthcare Mangement System that allows healt
 
   <li>Database Schema using SQL Server</li>
 <pre>
-  -- Create Patient table
+-- Create Patient table
 CREATE TABLE Patient (
 	patient_id int PRIMARY KEY,
 	first_name VARCHAR(255) NOT NULL,
