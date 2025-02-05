@@ -14,7 +14,7 @@ Design a relational database for a Healthcare Mangement System that allows healt
 <li>Entities and Attributes</li>
 <li>Entity Relationship (ER) Diagram</li>
 <li>Database Model</li>
-<li>SQL Server Database Schema</li>
+<li>Database Schema using SQL Server</li>
 </ol>
 
 
