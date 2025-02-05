@@ -16,9 +16,8 @@ Design a relational database for a Healthcare Mangement System that allows healt
 	<li>Database Model</li>
 	<li>Database Schema using SQL Server</li>
 </ol>
-<h5>Entities and Attributes</h5>
-	<pre>				<
-		Patient entity stores personal details regarding the patient
+<h5>Entities and Attributes</h5>			<
+<b></b>Patient entity stores personal details regarding the patient</b>
 		<ul>
 			<li>patient_id: Unique identifier for patients (Primary Key) </li>
 			<li>first_name: First name of the patient</li>
@@ -29,7 +28,7 @@ Design a relational database for a Healthcare Mangement System that allows healt
 			<li>phone: Phone number of patient</li>
 			<li>insurance_info: Insurance innformation of patient</li>
 		</ul>
-		<h5>Appointment entity stores information on appointments scheduled for patients</h5>
+Appointment entity stores information on appointments scheduled for patients
 		<ul>
 			<li>appointment_id: Unique identiffier for appointsments (Primary Key) </li>
 			<li>patient_id: Identifier of the patient for the appointment (Foreign Key referencing Patient table)  </li>
@@ -37,7 +36,6 @@ Design a relational database for a Healthcare Mangement System that allows healt
 			<li>appointment_date: Date and time of the appointment </li>
 			<li>status: status of the appointment</li>
 		</ul>
-	</pre>
 <h5>2. Entity Relationship Diagram</h5>
 		
 <h5>3. Database Model</h5>
