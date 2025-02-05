@@ -7,7 +7,7 @@ My goal is to pursue a career in healthcare analytics in hopes of enhancing heal
 <h2>Projects</h2>
 <h3>1. Healthcare Mangement System</h3>
 <h4>Objective</h4>
-Design a relational database for a Healthcare Mangement System that allows healthcare companies to efficiently store and manage data related to patients, doctors, appointments, billing, and inventory
+Design a relational database for a Healthcare Mangement System that allows healthcare companies to efficiently store and manage data related to patients, appointments, billing, inventory, and doctors.
 
 <h4>Deliverables</h4>
 <ol>
