@@ -66,7 +66,7 @@ CREATE TABLE Doctor (
 	specialization VARCHAR(255) NOT NULL,
 	schedule TEXT
 );
-);
+
 </pre>
 </ol>
 
