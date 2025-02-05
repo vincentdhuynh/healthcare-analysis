@@ -67,5 +67,4 @@ CREATE TABLE Doctor (
 
 <h4>Database Schema using SQL Server</h4>
 <br></br>
-<h3>2. Healthcare Business Intelligence Dashboard</h3>
 
