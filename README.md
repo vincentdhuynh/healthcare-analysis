@@ -21,8 +21,8 @@ Design a relational database for a Healthcare Mangement System that allows healt
 			<li>dob: Date of birth of patient</li>
 			<li>gender: Gender of patient</li>
 			<li>address: Address of patient</li>
-			<l>phone: Phone number of patient</li>
-			<l>insurance_info: Insurance innformation of patient</l>
+			<li>phone: Phone number of patient</li>
+			<li>insurance_info: Insurance innformation of patient</li>
 		</ul>
 		<h5>Appointment entity stores information on appointments scheduled for patients</h5>
 		<ul>
