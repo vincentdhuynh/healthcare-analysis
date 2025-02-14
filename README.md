@@ -94,3 +94,11 @@ Design a relational database for a Healthcare Mangement System that allows healt
 <h4>Database Schema using SQL Server</h4>
 <br></br>
 
+<h4>Improving Database Design</h4>
+<ol>
+<li>Use indexing to improve query performance, especially on frequently accessed columns like patient_id.</li>
+<li>Normalize the database schema to reduce data redundancy and improve data integrity.</li>
+<li>Implement data encryption and access controls to ensure data security and compliance with healthcare regulations.</li>
+<li>Regularly backup the database to prevent data loss and ensure data availability in case of system failures.</li>
+<li>Use stored procedures and triggers to enforce business rules and ensure data consistency.</li>
+</ol>
